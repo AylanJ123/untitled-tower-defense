@@ -10,7 +10,7 @@ namespace com.vintagerockets.untitledtowerdefense.afflictions
         public Transform[] points;
         private int destPoint = 0;
         private NavMeshAgent agent;
-
+        public int lives;
 
         void Start()
         {
