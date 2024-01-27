@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace com.vintagerockets.untitledtowerdefense
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public static GameManager Instance { get; private set; }
+
+        private void Awake()
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+
+        IEnumerator Start()
+        {
+            yield return new WaitForSeconds(2);
+            SceneManager.LoadScene(1);
+            SceneManager.UnloadSceneAsync(0);
+        }
+
     }
 }

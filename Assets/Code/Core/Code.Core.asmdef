@@ -1,3 +1,14 @@
 {
-	"name": "Code.Core"
+    "name": "Code.Core",
+    "rootNamespace": "com.vintagerockets.untitledtowerdefense",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
