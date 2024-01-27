@@ -1,6 +1,6 @@
 {
     "name": "Code.Afflictions",
-    "rootNamespace": "com.vintagerockets.untitledtowerdefense.levels",
+    "rootNamespace": "com.vintagerockets.untitledtowerdefense.afflictions",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
