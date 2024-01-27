@@ -1,0 +1,14 @@
+{
+    "name": "Code.Levels",
+    "rootNamespace": "com.vintagerockets.untitledtowerdefense.levels",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
