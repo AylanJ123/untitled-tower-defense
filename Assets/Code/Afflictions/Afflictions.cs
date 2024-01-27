@@ -6,16 +6,7 @@ namespace com.vintagerockets.untitledtowerdefense
 {
     public class Afflictions : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
+        private enum Status { Fire, Poison, Wet, Hidden }
+        private List<Status> afflictionList;
     }
 }
