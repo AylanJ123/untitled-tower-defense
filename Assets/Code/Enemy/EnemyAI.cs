@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace com.vintagerockets.untitledtowerdefense.afflictions
+namespace com.vintagerockets.untitledtowerdefense.enemies
 {
     public class EnemyAI : MonoBehaviour
     {

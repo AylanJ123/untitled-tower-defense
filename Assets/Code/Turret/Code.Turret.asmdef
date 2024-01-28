@@ -1,6 +1,6 @@
 {
     "name": "Code.Turret",
-    "rootNamespace": "com.vintagerockets.untitledtowerdefense.afflictions",
+    "rootNamespace": "com.vintagerockets.untitledtowerdefense.towers",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

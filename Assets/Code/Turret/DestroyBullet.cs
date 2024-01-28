@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace com.vintagerockets.untitledtowerdefense.afflictions
+namespace com.vintagerockets.untitledtowerdefense.towers
 {
     public class DestroyBullet : MonoBehaviour
     {
@@ -15,7 +15,7 @@ namespace com.vintagerockets.untitledtowerdefense.afflictions
         private IEnumerator DestroyInSeconds()
         {
             yield return new WaitForSeconds(seconds);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
     }

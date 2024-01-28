@@ -1,6 +1,6 @@
 {
     "name": "Code.Enemy",
-    "rootNamespace": "com.vintagerockets.untitledtowerdefense.afflictions",
+    "rootNamespace": "vintagerockets.untitledtowerdefense.enemies",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace com.vintagerockets.untitledtowerdefense.afflictions
+namespace com.vintagerockets.untitledtowerdefense.towers
 {
     public class Turret : MonoBehaviour
     {
