@@ -29,6 +29,7 @@ namespace com.vintagerockets.untitledtowerdefense.towers
             transform.rotation = rotation;
             if (Time.time > nextFireTime)
             {
+                Destroy(this.gameObject);
                 Shoot();
                 nextFireTime = Time.time + fireRate;
             }
@@ -46,6 +47,7 @@ namespace com.vintagerockets.untitledtowerdefense.towers
         {
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity, 1 << 6))
             {
+                
                 if (!hit.collider) return;
                 Debug.Log("Bien pegado");
                 Destroy(hit.transform.gameObject);

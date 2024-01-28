@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Dialog - 1
   m_EditorClassIdentifier: 
   lines:
-  - text: "HEY! \xBFNO ENSUCIES MI LANA, NO VES QUE ESTOY MUY BEEEEHHHHLLA?"
+  - text: "HEY! \xBFNO ENSUCIES MI LANA, NO VES QUE ESTOY MUY BEEEEHHHHLLA? Lastima
+      que las torretas se rompen al disparar D:"
     sprite: {fileID: 0}
     rightSided: 0
