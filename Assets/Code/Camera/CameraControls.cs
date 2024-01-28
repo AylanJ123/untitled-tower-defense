@@ -40,8 +40,7 @@ namespace com.vintagerockets.untitledtowerdefense
 
         private void HandleClickInput(CallbackContext ctx)
         {
-            if (ctx.started) clicking = true;
-            else clicking = false;
+            clicking = ctx.started;
         }
 
         private void HandleDragInput(CallbackContext ctx)

@@ -44,13 +44,12 @@ namespace com.vintagerockets.untitledtowerdefense.towers
         }
         private void Shoot()
         {
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity))
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity, 1 << 6))
             {
-                if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Enemy")))
-                {
-                    
-                }
+                if (!hit.collider) return;
                 Debug.Log("Bien pegado");
+                Destroy(hit.transform.gameObject);
+                targets.Remove(hit.transform.root.gameObject);
             }
         }
     }
