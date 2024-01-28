@@ -10,9 +10,12 @@ namespace vintagerockets.untitledtowerdefense.enemies
         private Transform enemySpawnPoint;
         [SerializeField]
         private LevelWaves waves;
+        [SerializeField]
+        private DialogManager dialogManager;
         // Start is called before the first frame update
         void Start()
         {
+            dialogManager = GameObject.Find("Dialog Canvas").GetComponent<DialogManager>();
             StartCoroutine(Waves());
         }
 
@@ -29,7 +32,7 @@ namespace vintagerockets.untitledtowerdefense.enemies
                 Instantiate(item.prefab,enemySpawnPoint,true);
                 if (item.dialog != null)
                 {
-                    
+                    dialogManager.DisplayDialog(item.dialog);
                 }
             }
             

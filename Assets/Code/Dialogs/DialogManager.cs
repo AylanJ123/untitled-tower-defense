@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
 using com.vintagerockets.untitledtowerdefense.dialogs;
+using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DialogManager : MonoBehaviour
     public static DialogManager Instance { get; private set; }
 
     private Text dialogText;
+    public TextMeshProUGUI textMeshProUGUI;
     [SerializeField] private Image nextButton;
     [SerializeField] private InputAction dialogClickAction;
 
@@ -27,17 +29,21 @@ public class DialogManager : MonoBehaviour
 
     void Start()
     {
+       
         dialogClickAction.started += ctx => HandleDialogInput();
 
-        nextButton.GetComponent<Button>().onClick.AddListener(HandleDialogInput);
+        //nextButton.GetComponent<Button>().onClick.AddListener(HandleDialogInput);
 
         // Iniciar la primera línea de diálogo.
-        StartCoroutine(TypeText(dialogLines[currentLine]));
+        //StartCoroutine(TypeText(dialogLines[currentLine]));
     }
 
     public void DisplayDialog(Dialog dialog)
     {
-
+        foreach (var item in dialog.lines)
+        {
+            textMeshProUGUI.text = item.text;
+        }
     }
 
     void OnEnable()

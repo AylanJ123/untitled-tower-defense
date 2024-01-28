@@ -13,18 +13,6 @@ MonoBehaviour:
   m_Name: Dialog - 1
   m_EditorClassIdentifier: 
   lines:
-  - text: 1
-    sprite: {fileID: 21300000, guid: 098e6c0dc68244a4d95e15ba3b786e0c, type: 3}
-    rightSided: 0
-  - text: 2
-    sprite: {fileID: 21300000, guid: 098e6c0dc68244a4d95e15ba3b786e0c, type: 3}
-    rightSided: 1
-  - text: 3
-    sprite: {fileID: 21300000, guid: 098e6c0dc68244a4d95e15ba3b786e0c, type: 3}
-    rightSided: 0
-  - text: 4
-    sprite: {fileID: 21300000, guid: 098e6c0dc68244a4d95e15ba3b786e0c, type: 3}
-    rightSided: 1
-  - text: 5
-    sprite: {fileID: 21300000, guid: 098e6c0dc68244a4d95e15ba3b786e0c, type: 3}
+  - text: "HEY! \xBFNO ENSUCIES MI LANA, NO VES QUE ESTOY MUY BEEEEHHHHLLA?"
+    sprite: {fileID: 0}
     rightSided: 0

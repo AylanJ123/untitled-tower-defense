@@ -33,7 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
+<<<<<<< Updated upstream
       name: RUN
+=======
+      name: mixamo.com
+>>>>>>> Stashed changes
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
@@ -53,7 +57,11 @@ ModelImporter:
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
+<<<<<<< Updated upstream
       mirror: 1
+=======
+      mirror: 0
+>>>>>>> Stashed changes
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
