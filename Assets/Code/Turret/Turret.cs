@@ -52,6 +52,7 @@ namespace com.vintagerockets.untitledtowerdefense.towers
                 Debug.Log("Bien pegado");
                 Destroy(hit.transform.gameObject);
                 targets.Remove(hit.transform.root.gameObject);
+                Destroy(transform.root.gameObject);
             }
         }
     }
