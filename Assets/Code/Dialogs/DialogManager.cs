@@ -7,6 +7,9 @@ using com.vintagerockets.untitledtowerdefense.dialogs;
 
 public class DialogManager : MonoBehaviour
 {
+
+    public static DialogManager Instance { get; private set; }
+
     private Text dialogText;
     [SerializeField] private Image nextButton;
     [SerializeField] private InputAction dialogClickAction;
@@ -16,6 +19,11 @@ public class DialogManager : MonoBehaviour
     private List<string> dialogLines = new List<string>();
     private int currentLine = 0;
     private bool isTyping = false;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {

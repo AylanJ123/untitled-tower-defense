@@ -1,7 +1,10 @@
 {
     "name": "Code.Enemy",
     "rootNamespace": "vintagerockets.untitledtowerdefense.enemies",
-    "references": [],
+    "references": [
+        "GUID:b11bcd61a4fa74341b101db54d9f399b",
+        "GUID:48c9f6afdac61634db0e0f241c7d4d51"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
