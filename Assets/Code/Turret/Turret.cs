@@ -1,4 +1,4 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,11 +30,10 @@ namespace com.vintagerockets.untitledtowerdefense.towers
             if (Time.time > nextFireTime)
             {
                 Shoot();
-                targets.Remove(other.gameObject);
                 nextFireTime = Time.time + fireRate;
             }
             
-            Debug.Log("¡Enemigo detectado!");
+            
         }
         private void OnTriggerExit(Collider other)
         {
@@ -49,8 +48,9 @@ namespace com.vintagerockets.untitledtowerdefense.towers
             {
                 if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Enemy")))
                 {
-                    //disparo y restar vida
+                    
                 }
+                Debug.Log("Bien pegado");
             }
         }
     }
