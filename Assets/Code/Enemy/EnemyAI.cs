@@ -8,12 +8,14 @@ namespace com.vintagerockets.untitledtowerdefense.enemies
     public class EnemyAI : MonoBehaviour
     {
         public Transform[] points;
+
         private int destPoint = 0;
         private NavMeshAgent agent;
         public int lives;
 
         void Start()
         {
+            
             agent = GetComponent<NavMeshAgent>();
 
             // Disabling auto-braking allows for continuous movement
