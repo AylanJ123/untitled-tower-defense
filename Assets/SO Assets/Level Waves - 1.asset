@@ -13,23 +13,7 @@ MonoBehaviour:
   m_Name: Level Waves - 1
   m_EditorClassIdentifier: 
   wave:
-  - prefab: {fileID: 8697123819160694441, guid: c0aaf89101ee7754db34563c10a2ce5d, type: 3}
-    cooldown: 20
-    dialog: {fileID: 0}
-    dialogDelay: 0
-  - prefab: {fileID: 7088566599867724488, guid: 847d047ee587db94f9acf943767a44db, type: 3}
-    cooldown: 40
-    dialog: {fileID: 0}
-    dialogDelay: 0
-  - prefab: {fileID: 7758849158624608984, guid: e83959391697f0043882c0ccf9898ca8, type: 3}
-    cooldown: 60
-    dialog: {fileID: 0}
-    dialogDelay: 0
-  - prefab: {fileID: 1705385433573576024, guid: 1a9c9a57b0f0a1d42a158866c799a749, type: 3}
-    cooldown: 80
-    dialog: {fileID: 0}
-    dialogDelay: 0
-  - prefab: {fileID: 1705385433573576024, guid: 1a9c9a57b0f0a1d42a158866c799a749, type: 3}
-    cooldown: 100
+  - prefab: {fileID: 0}
+    cooldown: 0
     dialog: {fileID: 0}
     dialogDelay: 0

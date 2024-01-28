@@ -13,13 +13,17 @@ namespace com.vintagerockets.untitledtowerdefense.afflictions
 
         public void ApplyAffliction(Affliction affliction)
         {
-            afflictionList.Add(affliction);
+            if (!afflictionList.Contains(affliction))
+                afflictionList.Add(affliction);
         }
 
         public void ApplyAffliction(Affliction affliction, float time)
         {
-            afflictionList.Add(affliction);
-            timerDictionary[affliction] = (Time.time + time, 0);
+            if (!afflictionList.Contains(affliction))
+            {
+                afflictionList.Add(affliction);
+                timerDictionary[affliction] = (Time.time + time, 0);
+            }
         }
 
         public void RemoveAffliction(Affliction affliction)
@@ -54,7 +58,7 @@ namespace com.vintagerockets.untitledtowerdefense.afflictions
                     timerDictionary.Add(affliction.Key, value);
                 }
             }
-            foreach (Affliction removed in toRemove) timerDictionary.Remove(removed);
+            foreach (Affliction removed in toRemove) RemoveAffliction(removed);
         }
 
         private void Update()
